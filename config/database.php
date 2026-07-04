@@ -4,14 +4,12 @@
  * Connexion PDO avec gestion d'erreurs
  */
 
-// Identifiants fournis par le panneau InfinityFree (MySQL Databases)
-define('DB_HOST', 'VOTRE_HOST_MYSQL');       // ex: sql209.epizy.com
-define('DB_NAME', 'VOTRE_NOM_BDD');          // ex: epiz_12345678_autopartage
-define('DB_USER', 'VOTRE_USER_MYSQL');       // ex: epiz_12345678
-define('DB_PASS', 'VOTRE_MOT_DE_PASSE');
+define('DB_HOST', 'sql211.infinityfree.com');
+define('DB_NAME', 'if0_42336905_autopartage');
+define('DB_USER', 'if0_42336905');
+define('DB_PASS', '2X4T3BjFgCDhvSw');
 define('DB_CHARSET', 'utf8mb4');
 
-// '' si les fichiers sont à la racine de htdocs, '/hope' si dans un sous-dossier htdocs/hope/
 define('BASE_URL', '');
 
 try {
