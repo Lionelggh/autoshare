@@ -1,6 +1,6 @@
-# Documentation Client - AutoPartage
+# Documentation Client - AutoShare
 
-Cette documentation explique en détail le fonctionnement de la plateforme AutoPartage du point de vue de l'utilisateur final (Client).
+Cette documentation explique en détail le fonctionnement de la plateforme AutoShare du point de vue de l'utilisateur final (Client).
 
 ## 1. Accès et Authentification
 ### Inscription

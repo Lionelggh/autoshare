@@ -15,8 +15,8 @@ $stmt = $pdo->prepare("SELECT r.*, v.marque, v.modele, u.prenom, u.nom
 $stmt->execute([':id' => $id, ':uid' => $userId]);
 $res = $stmt->fetch();
 
-if (!$res || !$res['mode_paiement']) {
-    setFlash('error', "Reçu non disponible.");
+if (!$res || !$res['mode_paiement'] || !in_array($res['statut'], ['confirmee', 'terminee'])) {
+    setFlash('error', "Reçu non disponible. Veuillez d'abord choisir un mode de paiement.");
     redirect('/client/reservations.php');
 }
 ?>
@@ -24,7 +24,7 @@ if (!$res || !$res['mode_paiement']) {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Reçu #<?= $res['id'] ?> - AutoPartage</title>
+    <title>Reçu #<?= $res['id'] ?> - AutoShare</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background: #f5f5f5; padding: 40px; color: #111; }
@@ -50,7 +50,7 @@ if (!$res || !$res['mode_paiement']) {
 <body>
     <div class="receipt">
         <div class="header">
-            <div class="logo">AutoPartage</div>
+            <div class="logo">AutoShare</div>
             <div style="text-align: right;">
                 <div class="value">Reçu #<?= $res['id'] ?></div>
                 <div class="label"><?= date('d/m/Y') ?></div>
@@ -96,11 +96,19 @@ if (!$res || !$res['mode_paiement']) {
             <span><?= formatPrix($res['prix_total']) ?></span>
         </div>
 
-        <?php if ($res['mode_paiement'] === 'sur_place'): ?>
-            <div class="payment-status status-onplace">Paiement sur place</div>
-        <?php else: ?>
-            <div class="payment-status status-paid">Payé en ligne</div>
-        <?php endif; ?>
+        <?php 
+        $paymentText = "Paiement sur place";
+        $paymentClass = "status-onplace";
+        
+        if ($res['statut_paiement'] === 'paye') {
+            $paymentText = "Payé en ligne";
+            $paymentClass = "status-paid";
+        } elseif ($res['mode_paiement'] === 'ligne') {
+            $paymentText = "Réglé en ligne";
+            $paymentClass = "status-paid";
+        }
+        ?>
+        <div class="payment-status <?= $paymentClass ?>"><?= $paymentText ?></div>
     </div>
 
     <div class="no-print">
@@ -114,7 +122,7 @@ if (!$res || !$res['mode_paiement']) {
             const element = document.querySelector('.receipt');
             const opt = {
                 margin:       0.5,
-                filename:     'Recu_AutoPartage_<?= $res['id'] ?>.pdf',
+                filename:     'Recu_AutoShare_<?= $res['id'] ?>.pdf',
                 image:        { type: 'jpeg', quality: 0.98 },
                 html2canvas:  { scale: 2 },
                 jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }

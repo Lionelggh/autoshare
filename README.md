@@ -1,6 +1,6 @@
-# AutoPartage - Application d'Autopartage
+# AutoShare - Application d'AutoShare
 
-Une plateforme web complète de location de véhicules (autopartage) développée avec PHP, MySQL et une interface moderne.
+Une plateforme web complète de location de véhicules (AutoShare) développée avec PHP, MySQL et une interface moderne.
 
 ## Fonctionnalités
 

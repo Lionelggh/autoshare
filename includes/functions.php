@@ -1,6 +1,6 @@
 <?php
 /**
- * AutoPartage - Fonctions utilitaires
+ * AutoShare - Fonctions utilitaires
  */
 
 /**

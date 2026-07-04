@@ -11,7 +11,7 @@ if (isset($_POST['mark_all_read'])) {
     $stmt = $pdo->prepare("UPDATE messages SET lu = 1 WHERE utilisateur_id = :uid");
     $stmt->execute([':uid' => $adminId]);
     setFlash('success', "Toutes les notifications ont été marquées comme lues.");
-    redirect('notifications.php');
+    redirect('/admin/notifications.php');
 }
 
 // Marquer une notification spécifique comme lue
@@ -20,7 +20,7 @@ if (isset($_POST['mark_read'])) {
     $stmt = $pdo->prepare("UPDATE messages SET lu = 1 WHERE id = :id AND utilisateur_id = :uid");
     $stmt->execute([':id' => $notifId, ':uid' => $adminId]);
     setFlash('success', "Notification marquée comme lue.");
-    redirect('notifications.php');
+    redirect('/admin/notifications.php');
 }
 
 // Récupérer les notifications de l'admin
@@ -35,7 +35,7 @@ $pageTitle = "Mes Notifications";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?> - AutoPartage</title>
+    <title><?= $pageTitle ?> - AutoShare</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">

@@ -31,7 +31,7 @@ $pageTitle = "Tableau de bord";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?> - AutoPartage</title>
+    <title><?= $pageTitle ?> - AutoShare</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -44,7 +44,7 @@ $pageTitle = "Tableau de bord";
         <header class="dashboard-header">
             <div>
                 <h1>Ravi de vous revoir, <?= $_SESSION['user_prenom'] ?> 👋</h1>
-                <p style="color: var(--secondary); font-size: 0.9rem;">Voici un aperçu de votre activité sur AutoPartage.</p>
+                <p style="color: var(--secondary); font-size: 0.9rem;">Voici un aperçu de votre activité sur AutoShare.</p>
             </div>
             <div class="user-info">
                 <a href="profile.php" class="btn btn-outline btn-sm">Mon profil</a>

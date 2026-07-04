@@ -92,7 +92,7 @@ $pageTitle = "Paramètres Admin";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?> - AutoPartage</title>
+    <title><?= $pageTitle ?> - AutoShare</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -172,7 +172,7 @@ $pageTitle = "Paramètres Admin";
                 <h3 style="font-size: 1.2rem; font-weight: 700;">Informations Système</h3>
             </div>
             <p style="color: var(--secondary); font-size: 0.9rem; line-height: 1.6;">
-                Cette console d'administration vous permet de gérer l'intégralité de la plateforme AutoPartage. 
+                Cette console d'administration vous permet de gérer l'intégralité de la plateforme AutoShare. 
                 Assurez-vous de maintenir vos identifiants en sécurité. En cas de suspicion d'accès non autorisé, 
                 veuillez changer votre mot de passe immédiatement.
             </p>

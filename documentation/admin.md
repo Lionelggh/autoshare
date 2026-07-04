@@ -1,6 +1,6 @@
-# Documentation Administrateur - AutoPartage
+# Documentation Administrateur - AutoShare
 
-Cette documentation détaille les fonctionnalités, la logique métier et l'architecture de l'interface d'administration de la plateforme AutoPartage.
+Cette documentation détaille les fonctionnalités, la logique métier et l'architecture de l'interface d'administration de la plateforme AutoShare.
 
 ## 1. Rôle et Privilèges de l'Administrateur
 L'administrateur est le garant du bon fonctionnement opérationnel de la plateforme. Son rôle est de superviser les actifs (véhicules), de valider les interactions clients (réservations) et de suivre les performances financières.

@@ -1,13 +1,13 @@
-# AutoPartage - Plateforme de Location de Véhicules
+# AutoShare - Plateforme de Location de Véhicules
 
-AutoPartage est une application web full-stack moderne permettant la gestion complète de locations de véhicules. Elle offre une expérience utilisateur premium tant pour les clients que pour les administrateurs, avec une gestion intégrée du cycle de vie des réservations, des paiements et de la communication.
+AutoShare est une application web full-stack moderne permettant la gestion complète de locations de véhicules. Elle offre une expérience utilisateur premium tant pour les clients que pour les administrateurs, avec une gestion intégrée du cycle de vie des réservations, des paiements et de la communication.
 
 ---
 
 ## 📖 Présentation du Projet
 
 ### Contexte
-Dans un environnement urbain de plus en plus mobile, la location de véhicules nécessite des outils agiles, rapides et sécurisés. AutoPartage répond à ce besoin en digitalisant l'ensemble du processus de location.
+Dans un environnement urbain de plus en plus mobile, la location de véhicules nécessite des outils agiles, rapides et sécurisés. AutoShare répond à ce besoin en digitalisant l'ensemble du processus de location.
 
 ### Problématique
 Comment simplifier la mise en relation entre un loueur de voitures et ses clients tout en garantissant la disponibilité des véhicules et la sécurité des transactions ?

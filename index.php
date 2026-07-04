@@ -14,7 +14,7 @@ $featuredVehicles = $stmt->fetchAll();
     <div class="hero-content fade-in">
         <div style="display: inline-block; padding: 8px 16px; background: rgba(0,0,0,0.05); border-radius: 50px; font-size: 0.8rem; font-weight: 700; margin-bottom: 24px; color: var(--primary); text-transform: uppercase; letter-spacing: 1px;">Redéfinissez votre mobilité</div>
         <h1 style="font-size: 3.5rem; margin-bottom: 20px;">Louez une voiture en toute simplicité</h1>
-        <p style="font-size: 1.2rem; margin-bottom: 32px;">La meilleure plateforme d'autopartage rapide, sécurisée et économique. Profitez de nos tarifs compétitifs et de notre large gamme de véhicules.</p>
+        <p style="font-size: 1.2rem; margin-bottom: 32px;">La meilleure plateforme d'AutoShare rapide, sécurisée et économique. Profitez de nos tarifs compétitifs et de notre large gamme de véhicules.</p>
         <div class="hero-actions">
             <?php if (isAdmin()): ?>
                 <a href="admin/dashboard.php" class="btn btn-primary btn-lg" style="box-shadow: 0 10px 20px rgba(0,0,0,0.1);">Gérer la plateforme</a>
@@ -43,8 +43,7 @@ $featuredVehicles = $stmt->fetchAll();
     </div>
     <div class="hero-image scale-up">
         <div style="position: relative; padding: 20px;">
-            <div style="position: absolute; top: 0; right: 0; width: 80%; height: 100%; background: var(--bg-alt); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; z-index: -1;"></div>
-            <img src="assets/images/hero-car.png" alt="Car sharing hero" style="box-shadow: 0 30px 60px rgba(0,0,0,0.2); border-radius: 20px;">
+            <img src="assets/images/index_im.jfif" alt="Car sharing hero" style="mix-blend-mode: multiply; max-width: 100%; height: auto;">
             <div style="position: absolute; bottom: 40px; left: -20px; background: #fff; padding: 18px 28px; border-radius: 18px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border: 1px solid var(--border);" class="hover-lift">
                 <div class="flex gap-3">
                     <div class="icon" style="background: var(--success); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fas fa-check" style="margin:0"></i></div>
@@ -82,7 +81,7 @@ $featuredVehicles = $stmt->fetchAll();
 <section class="section" id="how-it-works" style="background: #111; color: #fff; padding: 100px 0;">
     <div class="container">
         <div class="section-title text-center" style="display: block; margin-bottom: 60px;">
-            <h2 class="mb-4" style="color: #fff; font-size: 2.5rem; font-weight: 800;">Pourquoi choisir AutoPartage ?</h2>
+            <h2 class="mb-4" style="color: #fff; font-size: 2.5rem; font-weight: 800;">Pourquoi choisir AutoShare ?</h2>
             <p style="color: #888; max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Une expérience de mobilité repensée pour être plus fluide, plus sûre et plus intelligente.</p>
         </div>
         <div class="features grid-4">
@@ -117,7 +116,7 @@ $featuredVehicles = $stmt->fetchAll();
             <h2 style="font-size: 2.5rem; margin-bottom: 24px; font-weight: 800;">Révolutionner la Mobilité Urbaine</h2>
             <div style="max-width: 800px; margin: 0 auto;">
                 <p style="font-size: 1.1rem; color: var(--secondary); margin-bottom: 32px; line-height: 1.8;">
-                    AutoPartage est né de la volonté de simplifier la mobilité urbaine. Nous croyons que la possession d'un véhicule ne devrait pas être un frein à votre liberté de mouvement.
+                    AutoShare est né de la volonté de simplifier la mobilité urbaine. Nous croyons que la possession d'un véhicule ne devrait pas être un frein à votre liberté de mouvement.
                 </p>
                 <div class="grid-3" style="margin: 40px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 40px 0;">
                     <div>

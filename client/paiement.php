@@ -73,7 +73,7 @@ $pageTitle = "Règlement de la réservation";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?> - AutoPartage</title>
+    <title><?= $pageTitle ?> - AutoShare</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -127,28 +127,28 @@ $pageTitle = "Règlement de la réservation";
                         <label class="provider-item" onclick="selectProvider(this)">
                             <input type="radio" name="provider" value="wave" required>
                             <div class="provider-content">
-                                <img src="../assets/images/paiement/wave logo.jfif" alt="Wave" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;"><br>
+                                <img src="../assets/images/paiement/wave_logo.jfif" alt="Wave" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;"><br>
                                 <span>Wave</span>
                             </div>
                         </label>
                         <label class="provider-item" onclick="selectProvider(this)">
                             <input type="radio" name="provider" value="orange">
                             <div class="provider-content">
-                                <img src="../assets/images/paiement/orange logo.jfif" alt="Orange" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;"><br>
+                                <img src="../assets/images/paiement/orange_logo.jfif" alt="Orange" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;"><br>
                                 <span>Orange Money</span>
                             </div>
                         </label>
                         <label class="provider-item" onclick="selectProvider(this)">
                             <input type="radio" name="provider" value="moov">
                             <div class="provider-content">
-                                <img src="../assets/images/paiement/moov logo.jfif" alt="Moov" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;"><br>
+                                <img src="../assets/images/paiement/moov_logo.jfif" alt="Moov" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;"><br>
                                 <span>Moov Money</span>
                             </div>
                         </label>
                         <label class="provider-item" onclick="selectProvider(this)">
                             <input type="radio" name="provider" value="mtn">
                             <div class="provider-content">
-                                <img src="../assets/images/paiement/mtn logo.jfif" alt="MTN" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;"><br>
+                                <img src="../assets/images/paiement/mtn_logo.jfif" alt="MTN" style="width: 50px; height: 50px; object-fit: contain; margin-bottom: 8px;"><br>
                                 <span>MTN MoMo</span>
                             </div>
                         </label>
