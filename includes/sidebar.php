@@ -64,3 +64,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </div>
     </nav>
 </aside>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle" aria-label="Ouvrir le menu">
+    <i class="fas fa-bars"></i>
+</button>

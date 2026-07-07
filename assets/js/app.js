@@ -99,4 +99,52 @@ document.addEventListener('DOMContentLoaded', () => {
             input.parentElement.classList.remove('focused');
         });
     });
+
+    // 7. Menu hamburger (navigation publique mobile)
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if (hamburgerBtn && mobileNav) {
+        hamburgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = mobileNav.classList.toggle('show');
+            hamburgerBtn.classList.toggle('open', isOpen);
+            hamburgerBtn.setAttribute('aria-expanded', isOpen);
+        });
+        document.addEventListener('click', (e) => {
+            if (!mobileNav.contains(e.target) && e.target !== hamburgerBtn) {
+                mobileNav.classList.remove('show');
+                hamburgerBtn.classList.remove('open');
+                hamburgerBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+        // Fermer si on clique sur un lien interne
+        mobileNav.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('show');
+                hamburgerBtn.classList.remove('open');
+            });
+        });
+    }
+
+    // 8. Sidebar toggle (dashboard mobile)
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', () => {
+            document.body.classList.toggle('sidebar-open');
+        });
+    }
+    if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', () => {
+            document.body.classList.remove('sidebar-open');
+        });
+    }
+    // Fermer sidebar en cliquant sur un lien (mobile)
+    document.querySelectorAll('.sidebar-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                document.body.classList.remove('sidebar-open');
+            }
+        });
+    });
 });

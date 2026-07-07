@@ -43,8 +43,30 @@ $base = BASE_URL;
                     <a href="<?= $base ?>/auth/register.php" class="btn btn-primary btn-sm">S'inscrire</a>
                 <?php endif; ?>
             </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
+    <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Menu mobile">
+        <a href="<?= $base ?>/index.php"><i class="fas fa-home"></i> Accueil</a>
+        <a href="<?= $base ?>/client/vehicles.php"><i class="fas fa-car"></i> Véhicules</a>
+        <a href="#how-it-works"><i class="fas fa-question-circle"></i> Comment ça marche</a>
+        <a href="#about"><i class="fas fa-info-circle"></i> À propos</a>
+        <div class="mobile-nav-actions">
+            <?php if (isLoggedIn()): ?>
+                <?php if (isAdmin()): ?>
+                    <a href="<?= $base ?>/admin/dashboard.php" class="btn btn-primary">Dashboard</a>
+                <?php else: ?>
+                    <a href="<?= $base ?>/client/dashboard.php" class="btn btn-primary">Tableau de bord</a>
+                <?php endif; ?>
+                <a href="<?= $base ?>/auth/logout.php" class="btn btn-danger">Déconnexion</a>
+            <?php else: ?>
+                <a href="<?= $base ?>/auth/login.php" class="btn btn-outline">Se connecter</a>
+                <a href="<?= $base ?>/auth/register.php" class="btn btn-primary">S'inscrire</a>
+            <?php endif; ?>
+        </div>
+    </div>
     <?php
     $flash = getFlash();
     if ($flash): ?>
